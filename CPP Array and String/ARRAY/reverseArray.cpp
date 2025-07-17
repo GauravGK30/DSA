@@ -33,6 +33,8 @@ int main(){
         cout<<arr1[i]<<" ";
     }
     cout<<endl;
+
+    
     // EVEN ARRAY
     int arr2[6]={2,7,8,6,4,3};
     int size2 =6;
