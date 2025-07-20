@@ -1,0 +1,9 @@
+# Ignore compiled executables
+*.exe
+
+# VS Code temp files
+tempCodeRunnerFile.*
+
+# OS-specific
+.DS_Store
+Thumbs.db
