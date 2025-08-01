@@ -54,6 +54,7 @@ void leftrotateDarr(int arr[],int n,int d){
 }
 
 
+
 int main(){
     int n;
     cin>>n;
@@ -65,6 +66,7 @@ int main(){
     int d;
     cin>>d;
     leftrotateDarr(arr,n,d);
+    // rightrotateDarr(arr,n,d);
 
     for(int i=0;i<n;i++){
         cout<<arr[i]<<" ";
