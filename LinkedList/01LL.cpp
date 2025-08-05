@@ -99,6 +99,21 @@ class List{
         temp->next =newNode;
     }
 
+    int search(int key){
+        Node* temp =head;
+        int idx = 0;
+
+        while(temp != NULL){
+            if(temp->data == key){
+                return idx;
+            }else{
+                temp = temp->next;
+                idx++;
+            }
+        }
+        return -1;
+    }
+
     void display(){
         Node* temp = head;
 
@@ -124,9 +139,10 @@ int main(){
     ll.push_front(2);
     ll.push_front(1);
 
-    ll.display();    
     ll.insertAtMiddle(5,2);
+    ll.display();    
 
-    ll.display();
+    cout<<ll.search(2)<<endl;
+    cout<<ll.search(4)<<endl;
     return 0;
 }
