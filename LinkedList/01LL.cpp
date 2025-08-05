@@ -114,6 +114,22 @@ class List{
         return -1;
     }
 
+    void reverse(){
+        Node* prev = NULL;
+        Node* curr = head;
+        Node* next = NULL;
+        
+        tail = head; //to print reverse only
+        while(curr != NULL){
+            next = curr->next;
+            curr->next = prev;
+            prev =curr;
+            curr = next;
+        }
+        head = prev; //to print reverse only
+        cout<< prev->data<<endl;
+
+    }
     void display(){
         Node* temp = head;
 
@@ -140,9 +156,14 @@ int main(){
     ll.push_front(1);
 
     ll.insertAtMiddle(5,2);
-    ll.display();    
+    cout << "Original List: ";
+    ll.display();
+    ll.reverse();
+    cout << "Reversed List: ";
+    ll.display(); 
 
-    cout<<ll.search(2)<<endl;
-    cout<<ll.search(4)<<endl;
+
+    // cout<<ll.search(2)<<endl;
+    // cout<<ll.search(4)<<endl;
     return 0;
 }
