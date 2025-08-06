@@ -99,6 +99,17 @@ class List{
         temp->next =newNode;
     }
 
+    void findMiddle(){
+        Node* slow = head;
+        Node* fast = head;
+        while(fast != NULL && fast->next != NULL){
+            slow = slow->next;
+            fast = fast->next->next;
+        }
+        cout<<"middle "<<slow->data;
+
+    }
+
     int search(int key){
         Node* temp =head;
         int idx = 0;
@@ -148,21 +159,22 @@ int main(){
     // ll.push_front(2);
     // ll.push_front(3); //3->2->1->null;
 
-    // ll.push_back(4);
-    // ll.push_back(5);
     ll.push_front(4);
     ll.push_front(3);
     ll.push_front(2);
     ll.push_front(1);
+    ll.push_back(5);
+    // ll.push_back(6);
 
-    ll.insertAtMiddle(5,2);
+    // ll.insertAtMiddle(5,2);
+
     cout << "Original List: ";
     ll.display();
-    ll.reverse();
-    cout << "Reversed List: ";
-    ll.display(); 
+    // ll.reverse();
+    // cout << "Reversed List: ";
+    // ll.display(); 
 
-
+    ll.findMiddle();
     // cout<<ll.search(2)<<endl;
     // cout<<ll.search(4)<<endl;
     return 0;
