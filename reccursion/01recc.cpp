@@ -9,9 +9,8 @@ void print(int n){
     }
 
     cout<<n<<" ";//n to 1
-
-    print(n-1);
     
+    print(n-1);
     cout<<n<<" ";   //induction //1 to n
 }
 int main(){
