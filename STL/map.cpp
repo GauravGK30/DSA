@@ -15,3 +15,11 @@ int main(){
     cout<<m.erase("laptop");
     //insert,emplace,count,erase,find
 }
+
+//multimap multiple values
+// multimap<string,int>m 
+
+
+//unordered map no duplicates
+
+// unordered_map<string,int>m  
