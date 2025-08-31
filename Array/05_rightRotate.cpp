@@ -7,6 +7,7 @@ void rightRotateByD_Place(int arr[],int n,int d){
     reverse(arr+(n-d),arr+n);
     reverse(arr,arr+(n-d));
     reverse(arr,arr+n);
+
 }
 
 int main(){
