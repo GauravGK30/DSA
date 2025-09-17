@@ -39,10 +39,12 @@ int main(){
     st.push(6);
     // st.push(7);
 
+    cout<<" reverse: "<<endl;
+
     reverse(st);
     // Print remaining stack
     while (!st.empty()) {
-        cout << st.top() << " ";
+        cout << st.top() << endl;
         st.pop();
     }
 

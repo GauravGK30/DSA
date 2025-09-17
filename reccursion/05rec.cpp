@@ -19,7 +19,13 @@ void deleteMiddle(stack<int>& s,int size ){
         return;
 
     }
-    int k= size/2+1;
+    int k;
+    if(size%2==0){
+        k=size/2;
+    }else{
+
+        k= (size/2)+1;
+    } 
 
     solve(s,k);
 }
@@ -30,9 +36,9 @@ int main(){
     st.push(2);
     st.push(3);
     st.push(4);
-    // st.push(5);
-    // st.push(6);
-    // st.push(7);
+    st.push(5);
+    st.push(6);
+    st.push(7);
 
     deleteMiddle(st,st.size());
     

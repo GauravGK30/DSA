@@ -16,6 +16,7 @@ int factorial(int n){
 
 int main(){
     cout<<factorial(5)<<endl;
-    cout<<factorial(1)<<endl;
+    cout<<factorial(10)<<endl;
+    // cout<<factorial(-4)<<endl;
 
 }
